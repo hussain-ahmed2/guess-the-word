@@ -142,10 +142,16 @@ input.name = 'input';
 input.placeholder = 'Enter the Word';
 input.autofocus = true;
 
+const submit = document.createElement('button');
+submit.type = 'submit';
+submit.textContent = 'Submit';
+submit.className = 'btn';
+
 const error = document.createElement('p');
 error.className = 'error';
 form.appendChild(error);
 form.appendChild(input);
+form.appendChild(submit);
 root.appendChild(form);
 
 const btnContainer = document.createElement('div');
