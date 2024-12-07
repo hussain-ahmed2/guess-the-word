@@ -147,11 +147,15 @@ submit.type = 'submit';
 submit.textContent = 'Submit';
 submit.className = 'btn';
 
+const inputContainer = document.createElement('div');
+inputContainer.className = 'input-container';
+inputContainer.appendChild(input);
+inputContainer.appendChild(submit);
+
 const error = document.createElement('p');
 error.className = 'error';
 form.appendChild(error);
-form.appendChild(input);
-form.appendChild(submit);
+form.appendChild(inputContainer);
 root.appendChild(form);
 
 const btnContainer = document.createElement('div');
